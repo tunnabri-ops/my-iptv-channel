@@ -1,1 +1,1 @@
-file 'https://archive.org/download/BigBuckBunny_328/BigBuckBunny_512kb.mp4'
+file 'https://tvx.kbhub.online/Bachelor-EP-105.m3u8'
