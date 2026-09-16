@@ -3,7 +3,7 @@
 mkdir -p /app/live
 
 # লোগো ডাউনলোড
-wget -q -O /app/logo.jpg "https://imglink.cc/cdn/-n_ZO1Y3ib.jpg"
+wget -q -O /app/logo.jpg "https://image.winudf.com/v2/image1/Y29tLm1heHR2Lm1heHR2aXB0dmJveF9zY3JlZW5fN18xNTUzNDQzMTczXzA0NQ/screen-7.jpg?fakeurl=1&type=.jpg"
 
 # Nginx চালু
 nginx
@@ -16,7 +16,7 @@ ffmpeg -re -f concat -safe 0 -protocol_whitelist file,http,https,tcp,tls -stream
    [1:v]scale=55:-1[logo]; \
    [base][logo]overlay=W-w-15:15[v_logo]; \
    [v_logo]drawbox=y=ih-28:color=black@0.6:width=iw:height=28:t=fill, \
-   drawtext=fontfile=/usr/share/fonts/dejavu/DejaVuSans-Bold.ttf:text='Welcome to my tv channel, max tv 24/7, any req sms now free added your req':fontcolor=yellow:fontsize=14:x=w-mod(t*75\,w+text_w):y=h-21[v_out]" \
+   drawtext=fontfile=/usr/share/fonts/dejavu/DejaVuSans-Bold.ttf:text='Welcome to my tv channel, max tv 24/7 আপনার কোনো অনুরোধ থাকলে বললে আমরা ফ্রিতে অ্যাড করে দিবো , ':fontcolor=yellow:fontsize=14:x=w-mod(t*75\,w+text_w):y=h-21[v_out]" \
   -map "[v_out]" -map 0:a? \
   -c:v libx264 -preset ultrafast -tune zerolatency -b:v 450k -maxrate 500k -bufsize 1000k \
   -threads 1 \
