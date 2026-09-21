@@ -1,1 +1,1 @@
-file 'https://stream.mux.com/xttzDxesVC02nnojgEfWYtbqa7Ily0200cAURcz4eyKsv00.m3u8'
+file 'https://stream.mux.com/1rmQU74oQmsN7wxHl15tDYKBAV901Pb02pF1VrLz00TOhk.m3u8'
